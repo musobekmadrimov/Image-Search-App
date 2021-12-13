@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 20px;
+  .myNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b132b;
+    padding: 10px 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    h1 {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    .logoFirst {
+      color: #fcdebe;
+    }
+
+    h1.navbarTitle {
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+      text-align: right;
+    }
+  }
+
+  .formSection {
+    margin: 150px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    input {
+      font-size: 20px;
+      padding: 8px 16px;
+      line-height: 2rem;
+      border-radius: 50px;
+      margin-right: 20px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #0b132b;
+      outline: none;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 8px 16px;
+      line-height: 2rem;
+      border-radius: 50px;
+      margin-right: 20px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #0b132b;
+      background-color: #fcdebe;
+      color: #0b132b;
+      outline: none;
+    }
+  }
+  .title {
+    text-align: center;
+  }
+
+  .result {
+    padding: 90px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .card {
+      display: flex;
+      border: none;
+      justify-content: center;
+      align-items: center;
+      a {
+        .resultImage {
+          flex: 100% 1;
+          margin-top: 1rem;
+          border-radius: 20px;
+          width: 350px;
+          padding: 10px;
+          cursor: pointer;
+        }
+        .username {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 20px;
+  background-color: #0b132b;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  a {
+    text-decoration: none;
+    color: #fcdebe;
+  }
+}
+
+// Responsive
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  body {
+    .title {
+      font-size: 27px;
+    }
+
+    .myNavbar {
+      padding: 20px;
+      h1.navbarTitle{
+        font-size: 20px;
+      }
+    }
+
+    .formSection {
+      width: 100%;
+      margin: 100px auto 30px auto;
+      input {
+        font-size: 12px;
+        width: 70%;
+      }
+      button {
+        font-size: 15px;
+        width: 30%;
+      }
+    }
+
+    .result {
+      display: grid;
+      grid-template-columns: auto;
+      padding: 0;
+    }
+
+    .resultImage {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  body {
+    .title {
+      font-size: 27px;
+    }
+
+    .myNavbar {
+      padding: 15px;
+    }
+
+    .formSection {
+      width: 70%;
+      margin: 70px auto;
+      input {
+        font-size: 12px;
+        width: 70%;
+      }
+      button {
+        font-size: 15px;
+        width: 30%;
+      }
+    }
+
+    .result {
+      display: grid;
+      grid-template-columns: auto auto;
+      padding: 0;
+
+      .card a span .resultImage {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    .title {
+      font-size: 27px;
+    }
+
+    .myNavbar {
+      padding: 15px;
+    }
+
+    .formSection {
+      width: 70%;
+      margin: 80px auto 30px auto;
+      input {
+        font-size: 12px;
+        width: 70%;
+      }
+      button {
+        font-size: 15px;
+        width: 30%;
+      }
+    }
+
+    .result {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 0;
+      .card {
+        align-items: start;
+        a .resultImage {
+          width: 100%;
+        }
+      }
+    }
+
+    
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  body {
+    .title {
+      font-size: 27px;
+    }
+
+    .myNavbar {
+      padding: 15px;
+    }
+
+    .formSection {
+      width: 60%;
+      margin: 60px auto 30px auto;
+      input {
+        font-size: 12px;
+        width: 70%;
+      }
+      button {
+        font-size: 15px;
+        width: 30%;
+      }
+    }
+
+    .result {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+      .card {
+        align-items: start;
+      }
+    }
+
+    .resultImage {
+      width: 90%;
+    }
+  }
+}
