@@ -81,6 +81,9 @@ body {
       justify-content: center;
       align-items: center;
       a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
         .resultImage {
           flex: 100% 1;
           margin-top: 1rem;
