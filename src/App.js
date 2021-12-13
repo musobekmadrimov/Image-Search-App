@@ -44,7 +44,7 @@ function App() {
           {result.map((image, id) => {
             return (
               <div className="card" key={id}>
-                <a>
+                <a href="!#">
                   <LazyLoadImage
                     className="resultImage"
                     src={image.urls.full}
